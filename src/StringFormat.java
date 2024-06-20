@@ -23,6 +23,9 @@ public class StringFormat
 //        System.out.println(String.format("%d, %d, %d", 1, 2));
 // % 갯수 보다 값이 많으면 뒤의 값은 활용하지 않는다.
 //        System.out.println(String.format("%d, %d, %d", 1, 2, 3, 4));
+
+
+        System.out.println("Hello Java");
     }
 
 }
