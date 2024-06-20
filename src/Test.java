@@ -43,5 +43,7 @@ public class Test
             System.out.println(String.format("name = %s , grade = %.1f",names[i],grades[i]));
         }
 
+        System.out.println("End!!!!!!!!!");
+
     }
 }
