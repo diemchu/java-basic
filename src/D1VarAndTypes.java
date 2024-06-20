@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class D1VarAndTypes
 {
     public static void main(String[] args) {
@@ -88,6 +90,33 @@ public class D1VarAndTypes
         String letter = "a";
         // char charLetter = "a"; // 오류
         char charLetter = 'a';
+
+
+
+        // Scanner 사용하기
+        Scanner scanner = new Scanner(System.in);
+        // scanner.nextLine()
+        // 사용자의 다음 Enter 입력까지 String으로 받아온다.
+        String inputLine = scanner.nextLine();
+        System.out.println(inputLine);
+
+        // 사용자한테 입력을 두번 받는다.
+        String inputLine1 = scanner.nextLine();
+        // Enter를 기준으로
+        String inputLine2 = scanner.nextLine();
+
+        System.out.println(inputLine2);
+        System.out.println(inputLine1);
+
+        // int를 받고싶으면 nextInt();
+        int inputA = scanner.nextInt();
+        int inputB = scanner.nextInt();
+        System.out.println(inputA);
+        System.out.println(inputB);
+        System.out.println(inputA + inputB);
+
+        // long을 받고싶으면 nextLong();
+        long inputLong = scanner.nextLong();
 
 
     }
