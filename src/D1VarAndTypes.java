@@ -118,6 +118,30 @@ public class D1VarAndTypes
         // long을 받고싶으면 nextLong();
         long inputLong = scanner.nextLong();
 
+        // Escape Sequence
 
+        // Hello, "Jeeho"!!!
+        // 쌍따옴표(") 내부에는 쌍따옴표(")를 넣지 못한다.
+        // System.out.println("Hello, "Jeeho"!!!");  // 오류
+        // 평범한 쌍따옴표가 아님을 표현하기 위해 '\'를 넣는다.
+        System.out.println("Hello, \"Jeeho\"!!!");
+        char punctuation = '\'';
+        System.out.println('\'');
+
+        // 만약에 만약에 '\'를 문자열 내부에 쓰고 싶다면?
+        System.out.println("\\");
+
+        // 특수기호 넣기
+        // 엔터(Enter)키
+        System.out.println("A와 B 사이에 엔터\n를 넣었다.");
+        // 탭(Tab)키
+        System.out.println("A와 B 사이 \t들여쓰기");
+        System.out.println("name:\tJeeho");
+        System.out.println("grade:\t10");
+
+        // Carriage Return: 커서를 제일 앞으로 이동
+        System.out.println("abc\rdef"); // def
+        // Backspace: 지우기
+        System.out.println("abc\bdef");
     }
 }
