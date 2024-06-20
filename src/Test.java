@@ -27,23 +27,29 @@ public class Test
 //        System.out.println("   *   ");
 
         //문제 4
-        String [] names = new String[3];
-        double [] grades = new double[3];
+//        String [] names = new String[3];
+//        double [] grades = new double[3];
+//
+//        for (int i = 0 ; i < names.length ; i++){
+//            System.out.print("name = ");
+//            names[i] =   scanner.nextLine();
+//        }
+//        for( int i = 0 ;  i  < grades.length ;i++){
+//            System.out.print("grade = ");
+//            grades[i] = scanner.nextDouble();
+//        }
+//        for( int i = 0 ;  i  < grades.length ;i++) {
+////            System.out.printf("name = %s , grade = %.1f \n",names[i],grades[i]);
+//            System.out.println(String.format("name = %s , grade = %.1f",names[i],grades[i]));
+//        }
+//
+//        System.out.println("End!!!!!!!!!");
 
-        for (int i = 0 ; i < names.length ; i++){
-            System.out.print("name = ");
-            names[i] =   scanner.nextLine();
-        }
-        for( int i = 0 ;  i  < grades.length ;i++){
-            System.out.print("grade = ");
-            grades[i] = scanner.nextDouble();
-        }
-        for( int i = 0 ;  i  < grades.length ;i++) {
-//            System.out.printf("name = %s , grade = %.1f \n",names[i],grades[i]);
-            System.out.println(String.format("name = %s , grade = %.1f",names[i],grades[i]));
-        }
+        System.out.print("영문 입력: ");
+        scanner.nextLine();
+        System.out.print("한글 입력: ");
+        scanner.nextLine();
 
-        System.out.println("End!!!!!!!!!");
 
     }
 }
