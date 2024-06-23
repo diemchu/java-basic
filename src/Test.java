@@ -50,6 +50,7 @@ public class Test
         System.out.print("한글 입력: ");
         scanner.nextLine();
 
+        System.out.println(("Hello"));
 
     }
 }
