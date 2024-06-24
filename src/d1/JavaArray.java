@@ -1,3 +1,5 @@
+package d1;
+
 public class JavaArray {
     public static void main(String[] args) {
         // 여러 데이터를 하나의 변수에 담고 싶다면 배열을 만든다.

@@ -1,3 +1,5 @@
+package d1;
+
 import java.util.Scanner;
 
 public class D1VarAndTypes
