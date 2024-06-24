@@ -22,6 +22,12 @@ class User{
         this.coin = 0;
         level = Level.LOW;
     }
+
+    @Override
+    public String toString() {
+        return  String.format("name = %s , age = %d , Level  = %s, coin = %d",name,age,level,coin);
+    }
+
     public void showInfo(){
         System.out.println(String.format("name = %s , age = %d , Level  = %s, coin = %d",name,age,level,coin));
     }
