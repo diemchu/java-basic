@@ -23,6 +23,9 @@ class Dog extends  Animal{
     public void animalSound() {
         System.out.println("The Dog says: goooo gooooo");
     }
+    public  void  getAge(){
+        System.out.println(2000);
+    }
 }
 
 
@@ -30,5 +33,8 @@ public class JavaPolymorphism {
     public static void main(String[] args) {
         new Pig().animalSound();
         new Dog().animalSound();
+
+        Animal animal = new Dog();
+
     }
 }
