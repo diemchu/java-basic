@@ -7,18 +7,35 @@ package JavaOOP;
 // they also have their own implementation of an animal sound
 
 class Animal {
+    protected String name;
+    Animal(String name){
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public  void animalSound(){
         System.out.println("The animal makes a sound");
     }
 }
 
 class Pig extends  Animal {
+    Pig(String name) {
+        super(name);
+    }
+
     @Override
     public void animalSound() {
         System.out.println("The pig says: wee wee");
     }
 }
 class Dog extends  Animal{
+    Dog(String name) {
+        super(name);
+    }
+
     @Override
     public void animalSound() {
         System.out.println("The Dog says: goooo gooooo");
@@ -31,10 +48,10 @@ class Dog extends  Animal{
 
 public class JavaPolymorphism {
     public static void main(String[] args) {
-        new Pig().animalSound();
-        new Dog().animalSound();
+        new Pig("Pig").animalSound();
+        new Dog("Dog").animalSound();
 
-        Animal animal = new Dog();
-
+        Dog  dog = new Dog("Dog");
+        System.out.println(dog.getName());
     }
 }
