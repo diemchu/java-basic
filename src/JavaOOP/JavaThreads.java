@@ -1,7 +1,5 @@
 package JavaOOP;
 
-import java.util.Scanner;
-
 class MyThread extends  Thread{
     @Override
     public void run() {
@@ -29,7 +27,6 @@ public class JavaThreads
 
     // Muiltithreading
     // khả năng thực thi nhiều Thread cùng một lúc trong cùng một trương chìnhh
-    public static void main(String[] args) throws InterruptedException {
 //        new MyThread().start();
 //        new MyRunnable().run();
 
@@ -69,15 +66,6 @@ public class JavaThreads
                 }
             }
         });
-//        thread1.start();
-//        thread2.start();
         // Ngat ket noi Thread1 sau 2s
-//        try {
-//            Thread.sleep(2000);
-//            thread1.interrupt();
-//            System.out.println("da ngat ket noi Thread 1 sau 2s");
-//        }catch (InterruptedException e){
-//            e.printStackTrace();
-//        }
     }
 }

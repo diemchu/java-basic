@@ -20,8 +20,6 @@ public class SynchronizationThread
 //Synchronized Block: Chỉ một thread có thể thực thi khối mã này tại một thời điểm dựa trên khóa của đối tượng được chỉ định.
     public static void main(String[] args) throws InterruptedException {
         Counter counter = new Counter();
-
-
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -36,15 +34,12 @@ public class SynchronizationThread
             @Override
             public void run() {
                 for(int i= 0 ; i < 1000; i++){
-                    counter.increment();
                     System.out.println("thread 2 : "+counter.getCount());
                 }
             }
         });
         thread1.start();
         thread2.start();
-//        thread1.join();
-//        thread2.join();
 
         System.out.println("Final count: "+counter.getCount());
     }
