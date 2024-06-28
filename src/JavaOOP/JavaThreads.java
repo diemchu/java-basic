@@ -67,5 +67,4 @@ public class JavaThreads
             }
         });
         // Ngat ket noi Thread1 sau 2s
-    }
 }
