@@ -17,6 +17,8 @@ package d4;
 //이 정보를 반환하는 메서드를 가지고 있다.
 
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 
 public class BankAccount
@@ -41,7 +43,7 @@ public class BankAccount
     }
 
     //출금하수
-    public boolean withdraw(int withdrawalAmount, String password){
+    public boolean withdraw(int withdrawalAmount, @NotNull String password){
         if(password.equals(this.password)){
             if( withdrawalAmount > balance ){
                 System.out.println("잔액 부족합니다!!!!");
@@ -57,8 +59,6 @@ public class BankAccount
     public static String getInfoAllAccounts(){
         return  String.format("계좌 개수: %d , 전체 계좌들의 잔액: %d원",totalAccount,totalBalance);
     }
-
-
     @Override
     public String toString() {
         return "BankAccount{" +
@@ -67,27 +67,12 @@ public class BankAccount
                 ", balance=" + balance +
                 '}';
     }
-
-    public int getBalance() {
-        return balance;
-    }
-
-    public void setBalance(int balance) {
-        this.balance = balance;
-    }
-
     public String getBankNumber() {
         return bankNumber;
     }
-
-    public void setBankNumber(String bankNumber) {
-        this.bankNumber = bankNumber;
-    }
-
     public String getPassword() {
         return password;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }
