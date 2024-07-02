@@ -1,5 +1,7 @@
 package d6;
 
+
+
 public class Lecturer  extends  CollegeMember{
     private int papers;
     public int getPapers() {
