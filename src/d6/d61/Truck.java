@@ -1,4 +1,4 @@
-package d6;
+package d6.d61;
 // Truck is a Car
 public class Truck extends  Car {
     private int maxLoad = 100;

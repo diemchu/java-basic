@@ -1,7 +1,5 @@
 package DataStruct.TreeEx;
 
-import d6.Main;
-
 public class ExpressionTree {
     //이진 트리는 수식 트리(expression tree)를 처리하는데 사용된다.
     //수식 트리 전위,중위,후위의 순회 방법으로 읽으면 각각 전위  표기 수식, 중위 표기 수식, 후위 표기 수식이 된다

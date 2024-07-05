@@ -146,8 +146,6 @@ public class BinarySearchTree
     }
 
 
-
-
     public  static  void printTree(TreeNode root){
         if(root != null){
             printTree(root.left);
